@@ -1,0 +1,34 @@
+{
+  "name": "koa-ts-route",
+  "version": "0.0.30",
+  "description": "koa route",
+  "main": "./build/src/index.js",
+  "types": "./build/src/index.d.ts",
+  "scripts": {
+    "build": "rm -rf build ; tsc",
+    "test": "mocha build/test/test.js",
+    "publish-private": "npm run build ; npm version patch ; npm publish --registry http://192.168.0.62:4873/"
+  },
+ "maintainers": [
+    {
+      "name": "luliang",
+      "email": "lu_liang@qq.com"
+    }
+  ],  
+  "keywords": [
+    "koa",
+    "typescript",
+    "route",
+    "router"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.0.0",
+    "path-to-regexp": "^1.7.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.38",
+    "@types/mocha": "^2.2.33",
+    "mocha": "^3.2.0"
+  }
+}
