@@ -82,7 +82,9 @@ koa.listen(3000);
 ```
 
 GET http://localhost:3000/user -> get
+
 POST http://localhost:3000/user -> post
+
 ....
 
 ## URL格式参数 URL Format Parameter
@@ -124,3 +126,7 @@ async dispose(){
 	//clean,close connection...
 }
 ```
+
+## License
+
+  MIT
