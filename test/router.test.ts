@@ -1,4 +1,5 @@
-'use strict';
+
+import 'mocha';
 
 import assert = require('assert');
 

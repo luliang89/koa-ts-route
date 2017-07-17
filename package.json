@@ -7,14 +7,14 @@
   "scripts": {
     "build": "rm -rf build ; tsc",
     "test": "mocha build/test/test.js",
-    "publish-private": "npm run build ; npm version patch ; npm publish --registry http://192.168.0.62:4873/"
+    "publish-private": "npm run build && npm version patch && npm publish --registry http://192.168.0.62:4873/"
   },
- "maintainers": [
+  "maintainers": [
     {
       "name": "luliang",
       "email": "lu_liang@qq.com"
     }
-  ],  
+  ],
   "keywords": [
     "koa",
     "typescript",
@@ -29,6 +29,7 @@
   "devDependencies": {
     "@types/koa": "^2.0.38",
     "@types/mocha": "^2.2.33",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "typescript": "2.3.3"
   }
 }

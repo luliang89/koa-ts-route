@@ -24,7 +24,7 @@ export interface IController {
 
 export interface IControllerConstructor {
 
-    new (): IController
+    new(): IController
 
 }
 
@@ -212,11 +212,11 @@ export class Router {
                     await ctrl.initialize();
                 }
                 let result = await (<any>ctrl)[route.action]();
-                if (result != undefined && result != null) {
-                    if (typeof result === 'number') {
-                        context.status = result;
-                    } else {
-                        context.body = result;
+                if (result !== undefined && result !== null) {
+                    context.body = result;
+                } else {
+                    if (context.body !== undefined && context.body !== null) {
+                        context.status = 204;
                     }
                 }
             } finally {

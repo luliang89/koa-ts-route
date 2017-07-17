@@ -9,9 +9,8 @@
         "noImplicitAny": true,
         "removeComments": true,
         "sourceMap": false,
-        "newLine": "CRLF"
-    },
-    "exclude": [
-        "build"
-    ]
+        "newLine": "CRLF",
+        "alwaysStrict":true,
+        "types" : ["node"]
+    }
 }
