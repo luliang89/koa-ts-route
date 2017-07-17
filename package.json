@@ -1,6 +1,6 @@
 {
   "name": "koa-ts-route",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "description": "koa route",
   "main": "./build/src/index.js",
   "types": "./build/src/index.d.ts",
