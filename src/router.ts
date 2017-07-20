@@ -212,7 +212,7 @@ export class Router {
                     await ctrl.initialize();
                 }
                 let result = await (<any>ctrl)[route.action]();
-                if (result !== undefined && result !== null) {
+                if (result !== undefined || result !== null) {
                     context.body = result;
                 } else {
                     if (context.body === undefined && context.body === null) {
