@@ -215,7 +215,7 @@ export class Router {
                 if (result !== undefined || result !== null) {
                     context.body = result;
                 } else {
-                    if (context.body === undefined && context.body === null) {
+                    if (context.body === undefined || context.body === null) {
                         context.status = 204;
                     }
                 }
